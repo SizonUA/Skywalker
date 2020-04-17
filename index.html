@@ -1,133 +1,148 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap&subset=cyrillic"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Звёздные войны.Скайуокер.Восход</title>
+  </head>
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap&subset=cyrillic" rel="stylesheet">
-  <link rel="stylesheet" href="css/normalize.css">
-  <link rel="stylesheet" href="css/style.css">
-  <title>Звёздные войны.Скайуокер.Восход</title>
-</head>
-
-<body>
-  <div class="container">
-    <header class="header">
-      <img src="img/logo.png" alt="Logo" class="logo header__logo">
-      <nav class="nav">
-        <a href="#" class="nav__link">Билеты</a>
-        <a href="#" class="nav__link">О фильме</a>
-        <a href="#" class="nav__link">Трейлеры</a>
-        <a href="#" class="nav__link">Отзывы</a>
-      </nav>
-    </header>
-    <main class="main">
-      <div class="hero">
-        <h2 class="hero__subtitle">
-          Эпизод IX
+  <body>
+    <div class="container">
+      <header class="header">
+        <img src="img/logo.png" alt="Logo" class="logo header__logo" />
+        <nav class="nav">
+          <a href="#" class="nav__link">Билеты</a>
+          <a href="#" class="nav__link">О фильме</a>
+          <a href="#" class="nav__link">Трейлеры</a>
+          <a href="#" class="nav__link">Отзывы</a>
+        </nav>
+      </header>
+      <main class="main">
+        <div class="hero">
+          <h2 class="hero__subtitle">
+            Эпизод IX
+          </h2>
+          <h1 class="hero__title">
+            Скайуокер. Восход
+          </h1>
+          <p class="hero__description">
+            Фильм завершает невероятную историю семьи Скайуокеров, длящуюся уже
+            более сорока лет, и обещает дать ответы на все загадки из предыдущих
+            серий. Зрителя ожидают старые и новые герои, уникальные миры,
+            увлекательные путешествия на край Галактики и грандиозный финал
+            фантастической саги.
+          </p>
+          <span class="hero__premier">
+            Премьера
+          </span>
+          <span class="hero__date">
+            19 декабря 2019
+          </span>
+          <button class="hero__button-play">
+            Смотреть трейлер
+          </button>
+        </div>
+        <!-- /.hero -->
+      </main>
+      <div class="episodes">
+        <h2 class="episodes__title">
+          Предыдущие эпизоды
         </h2>
-        <h1 class="hero__title">
-          Скайуокер. Восход
-        </h1>
-        <p class="hero__description">
-          Фильм завершает невероятную историю семьи Скайуокеров, длящуюся уже более сорока лет, и обещает дать ответы на
-          все загадки из предыдущих серий. Зрителя ожидают старые и новые герои, уникальные миры, увлекательные
-          путешествия на край Галактики и грандиозный финал фантастической саги.
-        </p>
-        <span class="hero__premier">
-          Премьера
-        </span>
-        <span class="hero__date">
-          19 декабря 2019
-        </span>
-        <button class="hero__button-play">
-          Смотреть трейлер
-        </button>
+        <div class="sliders">
+          <!-- Эпизод IV -->
+          <div class="slider__item">
+            <p class="slider__year">
+              1977
+            </p>
+            <h3 class="slider__title">Эпизод IV:<br />Новая надежда</h3>
+            <div class="slider__rating">
+              <span class="slider__rating-lable">
+                Рейтинг
+              </span>
+            </div>
+            <!-- /.slider__rating -->
+            <img
+              class="slider__image"
+              src="img/episodes/episode4.png"
+              alt="Episode 4"
+            />
+          </div>
+          <!-- /.slider__item -->
+
+          <!-- Эпизод V -->
+          <div class="slider__item episode-5">
+            <p class="slider__year">
+              1980
+            </p>
+            <h3 class="slider__title">
+              Эпизод V:<br />Империя наносит ответный удар
+            </h3>
+            <div class="slider__rating">
+              <span class="slider__rating-lable">
+                Рейтинг
+              </span>
+            </div>
+            <!-- /.slider__rating -->
+            <img
+              class="slider__image"
+              src="img/episodes/episode5.png"
+              alt="Episode 5"
+            />
+          </div>
+          <!-- /.slider__item -->
+
+          <!-- Эпизод VI -->
+          <div class="slider__item episode-6">
+            <p class="slider__year">
+              1983
+            </p>
+            <h3 class="slider__title">Эпизод VI:<br />Возвращение джедая</h3>
+            <div class="slider__rating">
+              <span class="slider__rating-lable">
+                Рейтинг
+              </span>
+            </div>
+            <!-- /.slider__rating -->
+            <img
+              class="slider__image"
+              src="img/episodes/episode6.png"
+              alt="Episode 6"
+            />
+          </div>
+          <!-- /.slider__item -->
+
+          <!-- Эпизод I -->
+          <div class="slider__item episode-1">
+            <p class="slider__year">
+              1999
+            </p>
+            <h3 class="slider__title">Эпизод I:<br />Скрытая угроза</h3>
+            <div class="slider__rating">
+              <span class="slider__rating-lable">
+                Рейтинг
+              </span>
+            </div>
+            <!-- /.slider__rating -->
+            <img
+              class="slider__image"
+              src="img/episodes/episode1.png"
+              alt="Episode 1"
+            />
+          </div>
+          <!-- /.slider__item -->
+
+          <!-- NEED MORE CARD -->
+        </div>
+        <!-- /.sliders -->
       </div>
-      <!-- /.hero -->
-    </main>
-    <div class="episodes">
-      <h2 class="episodes__title">
-        Предыдущие эпизоды
-      </h2>
-      <div class="sliders">
-
-        <!-- Эпизод IV -->
-        <div class="slider__item episode-4">
-          <p class="slider__year">
-            1977
-          </p>
-          <h3 class="slider__title">
-            Эпизод IV:<br>Новая надежда
-          </h3>
-          <div class="slider__rating">
-            <span class="slider__rating-lable">
-              Рейтинг
-            </span>
-          </div>
-          <!-- /.slider__rating -->
-        </div>
-        <!-- /.slider__item -->
-
-        <!-- Эпизод V -->
-        <div class="slider__item episode-5">
-          <p class="slider__year">
-            1980
-          </p>
-          <h3 class="slider__title">
-            Эпизод V:<br>Империя наносит ответный удар
-          </h3>
-          <div class="slider__rating">
-            <span class="slider__rating-lable">
-              Рейтинг
-            </span>
-          </div>
-          <!-- /.slider__rating -->
-        </div>
-        <!-- /.slider__item -->
-
-        <!-- Эпизод VI -->
-        <div class="slider__item episode-6">
-          <p class="slider__year">
-            1983
-          </p>
-          <h3 class="slider__title">
-            Эпизод VI:<br>Возвращение джедая
-          </h3>
-          <div class="slider__rating">
-            <span class="slider__rating-lable">
-              Рейтинг
-            </span>
-          </div>
-          <!-- /.slider__rating -->
-        </div>
-        <!-- /.slider__item -->
-
-        <!-- Эпизод I -->
-        <div class="slider__item episode-1">
-          <p class="slider__year">
-            1999
-          </p>
-          <h3 class="slider__title">
-            Эпизод I:<br>Скрытая угроза
-          </h3>
-          <div class="slider__rating">
-            <span class="slider__rating-lable">
-              Рейтинг
-            </span>
-          </div>
-          <!-- /.slider__rating -->
-        </div>
-        <!-- /.slider__item -->
-
-<!-- NEED MORE CARD -->
-
-      </div>
-      <!-- /.sliders -->
+      <!-- /.episodes -->
     </div>
-    <!-- /.episodes -->
-  </div>
-  <!-- /.container -->
-</body>
-
+    <!-- /.container -->
+  </body>
 </html>
