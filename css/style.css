@@ -3,12 +3,9 @@
   font-family: "ProximaNova-Black";
 
   src: local("ProximaNova-Black"),
-    url("https://nomail.com.ua/files/eot/aa46d234cf405126cdd1c36600e4b978.eot?#iefix")
-      format("embedded-opentype"),
-    url("https://nomail.com.ua/files/woff/aa46d234cf405126cdd1c36600e4b978.woff")
-      format("woff"),
-    url("https://nomail.com.ua/files/woff2/aa46d234cf405126cdd1c36600e4b978.woff2")
-      format("woff2");
+    url("https://nomail.com.ua/files/eot/aa46d234cf405126cdd1c36600e4b978.eot?#iefix") format("embedded-opentype"),
+    url("https://nomail.com.ua/files/woff/aa46d234cf405126cdd1c36600e4b978.woff") format("woff"),
+    url("https://nomail.com.ua/files/woff2/aa46d234cf405126cdd1c36600e4b978.woff2") format("woff2");
 }
 
 *,
@@ -23,14 +20,14 @@ body {
   font-weight: normal;
   line-height: 150%;
   color: #ffffff;
-  background: #070506 url(../img/main-bg.png);
+  background: #070506 url("../img/main-bg.png") no-repeat;
 }
 
 .container {
+  /* border: 1px solid red; */
   max-width: 1060px;
   width: 90%;
   margin: auto;
-  border: 1px solid red;
   margin-top: 50px;
 }
 
@@ -86,7 +83,7 @@ h2 {
   max-width: 572px;
   font-size: 18px;
   color: #afafaf;
-  margin-bottom: 25px;
+  margin-bottom: 46px;
 }
 
 .hero__premier {
@@ -98,21 +95,22 @@ h2 {
 
 .hero__date {
   display: block;
-  margin-bottom: 46px;
   font-size: 24px;
+  margin-bottom: 25px;
 }
 
 .hero__button-play {
-  display: block;
+  display: inline-block;
   position: relative;
-  font-size: 18px;
+  font-size: 14px;
   line-height: 16px;
   color: #ffffff;
   text-transform: uppercase;
+  text-decoration: none;
   background: linear-gradient(90deg, #fb641a 0%, #fc3309 100%);
   border-radius: 300px;
   border: none;
-  padding: 25px 34px;
+  padding: 25px 35px;
   padding-right: 90px;
 }
 
@@ -122,7 +120,7 @@ h2 {
   width: 65px;
   height: 65px;
   right: 0;
-  top: 0;
+  top: 1px;
   background: #ffffff url(../img/play.svg) no-repeat;
   background-position: 23px 19px;
   border-radius: 50%;
