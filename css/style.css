@@ -10,7 +10,7 @@ body {
   font-weight: normal;
   line-height: 150%;
   color: #ffffff;
-  background: url("../img/main-bg.png") no-repeat;
+  background: #010101 url("../img/main-bg.png") top 8% right 115% no-repeat;
   /* background-size: cover; */
   background-attachment: fixed;
 }
@@ -159,7 +159,7 @@ h2 {
   box-shadow: 0px 10px 26px rgba(0, 0, 0, 0.25);
   border-radius: 10px;
   padding: 30px 30px 26px 30px;
-  transition: all 0.2s;
+  transition: all 0.2s ease;
 }
 
 .slider__item:before {
@@ -171,6 +171,7 @@ h2 {
   left: 0;
   background: rgba(80, 80, 80, 0.86);
   z-index: -1;
+  transition: all 0.2s;
 }
 
 .slider__item:not(:last-child) {
@@ -196,15 +197,23 @@ h2 {
   margin-right: 10px;
 }
 
+.slider__rating-stars {
+  opacity: 0;
+}
+
 .star {
   display: inline-block;
   width: 12px;
   height: 12px;
-  background: url('../img/star.svg') no-repeat center;
+  background: url("../img/star.svg") no-repeat center;
 }
 
 .star-clear {
-  background: url('../img/star-clear.svg') no-repeat center;
+  background: url("../img/star-clear.svg") no-repeat center;
+}
+
+.slider__item:hover .slider__rating-stars {
+  opacity: 0.86;
 }
 
 .slider__image {
@@ -218,8 +227,8 @@ h2 {
   width: 32px;
   height: 32px;
   border: none;
-  background: transparent url('../img/left-arrow.svg') no-repeat center;
-  margin: 15px 15px 0 0;
+  background: transparent url("../img/left-arrow.svg") no-repeat center;
+  margin-right: 15px;
   cursor: pointer;
 }
 
@@ -227,7 +236,7 @@ h2 {
   width: 32px;
   height: 32px;
   border: none;
-  background: transparent url('../img/right-arrow.svg') no-repeat center;
+  background: transparent url("../img/right-arrow.svg") no-repeat center;
   cursor: pointer;
 }
 
@@ -235,5 +244,44 @@ h2 {
 .slider__nav--right span {
   display: none;
 }
+.owl-nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 15px;
+}
 
-/*  00:45:00 */
+/* @MEDIA */
+@media (max-width: 600px) {
+  body {
+    background-size: contain;
+  }
+  .header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .header__logo {
+    margin-bottom: 30px;
+  }
+  .hero__subtitle {
+    font-size: 24px;
+  }
+  .hero__title {
+    font-size: 36px;
+    line-height: 120%;
+  }
+  .hero__description {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 360px) {
+  .nav {
+    display: flex;
+    flex-direction: column;
+  }
+  .nav__link {
+    margin-bottom: 10px;
+  }
+}
+/*  01:09:00 */
