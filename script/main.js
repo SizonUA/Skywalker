@@ -22,3 +22,20 @@ $(document).ready(function () {
     }
   })
 });
+
+// Scroll
+const episodesLink = document.querySelector('.go-to-episodes'),
+  episodes = document.querySelector('#episodes');
+
+
+const scrollTo = (elem) => {
+  window.scroll({
+    left: 0,
+    top: elem.offsetTop,
+    behavior: 'smooth'
+  })
+}
+
+episodesLink.addEventListener('click', () => {
+  scrollTo(episodes);
+})
